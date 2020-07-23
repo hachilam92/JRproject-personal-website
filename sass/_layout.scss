@@ -1,0 +1,20 @@
+#site-header{
+    height: 20vh;
+}
+
+.row{
+    width: 100%;
+}
+
+#sub-pages{
+    .card{
+        min-height: 564px;
+        border-radius: 20px;
+        display: none;
+    }
+    .card.current-page{
+        display: flex;
+    }
+}
+
+

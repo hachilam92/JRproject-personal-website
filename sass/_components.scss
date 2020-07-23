@@ -1,0 +1,102 @@
+@import "base";
+
+%active-navbar-text{
+    color: black;
+    border-bottom: 2px solid $primary-color;
+}
+
+//-----------------navigation bar---------------
+
+#site-header{
+    padding: 0;
+    background-color: $secondary-color;
+    .navbar{
+        height: 100%;
+        padding: 0;
+        position: relative;
+
+        .nav-item{
+            margin-left: 20px;
+            color: $secondary-text-color;
+            border-bottom: 2px solid $secondary-color;
+           
+            &:hover{
+                @extend %active-navbar-text;
+                cursor: pointer;
+            }    
+        
+            .nav-link{
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+
+.nav-item.active{
+    @extend %active-navbar-text;
+}
+
+
+//------------page layout-------------------
+
+
+#sub-pages{
+    background-color: $secondary-color;
+}
+
+.card{
+    max-width: 1000px;
+}
+
+//-----------Home page-------------
+
+.card-home{
+    padding-bottom: 20px;
+    &__top{
+        padding: 50px;
+        margin-bottom: 25px;
+        height: 290px;
+        @extend %main-background;
+    }
+
+    &__content{
+        padding-left: 35px;
+        padding-right: 35px;
+        height: auto;
+    }
+        .info-list{
+            list-style: none;
+            padding: 0;
+            &__item{
+                &__title{
+                    display: inline-block;
+                    min-width: 120px;
+                }
+                &__value{
+                    color: $secondary-text-color;
+                }
+            }
+        }
+}
+
+.avatar-image{
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+    border: 0;
+}
+
+
+//-----------Resume page-------------
+
+.card-ordinary{
+    &__header{
+        @extend %main-background;
+        text-align: center;
+        margin: 0;
+        padding: 30px 50px;
+        color: white;
+    }
+}
