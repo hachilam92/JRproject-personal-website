@@ -1,5 +1,6 @@
 $primary-color: #2eca7f;
 $secondary-color:#f8f9fa;
+$primary-text-color: black;
 $secondary-text-color: #9e9e9e;
 
 %main-background{
@@ -10,4 +11,16 @@ $secondary-text-color: #9e9e9e;
     background-repeat: no-repeat;
     border-radius: 20px 20px 0 0;
     overflow: hidden;
+}
+
+%social-media-icon{
+    width: 35px;
+    height: 35px;
+    background-color: $secondary-color;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-right: 7px;
 }

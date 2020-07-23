@@ -8,6 +8,18 @@
   overflow: hidden;
 }
 
+.intro__social-media__instagram, .intro__social-media__facebook, .intro__social-media__twitter {
+  width: 35px;
+  height: 35px;
+  background-color: #f8f9fa;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
 #site-header {
   height: 20vh;
 }
@@ -35,6 +47,18 @@
   overflow: hidden;
 }
 
+.intro__social-media__instagram, .intro__social-media__facebook, .intro__social-media__twitter {
+  width: 35px;
+  height: 35px;
+  background-color: #f8f9fa;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
 #site-header .navbar .nav-item.active, #site-header .navbar .nav-item:hover {
   color: black;
   border-bottom: 2px solid #2eca7f;
@@ -48,6 +72,7 @@
   height: 100%;
   padding: 0;
   position: relative;
+  transition: all 0.6s ease-in-out;
 }
 #site-header .navbar .nav-item {
   margin-left: 20px;
@@ -68,6 +93,10 @@
   max-width: 1000px;
 }
 
+.highlight-text {
+  color: #2eca7f;
+}
+
 .card-home {
   padding-bottom: 20px;
 }
@@ -75,6 +104,15 @@
   padding: 50px;
   margin-bottom: 25px;
   height: 290px;
+}
+.card-home__top__intro {
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-home__top .row {
+  height: 100%;
 }
 .card-home__content {
   padding-left: 35px;
@@ -95,16 +133,30 @@
 
 .avatar-image {
   max-width: 100%;
+  max-height: 100%;
   vertical-align: bottom;
-  height: auto;
   border: 0;
+}
+
+.intro__social-media {
+  display: flex;
+  justify-content: center;
+}
+.intro__social-media__twitter {
+  background-image: url(../images/social-media-icons/twitter.png);
+}
+.intro__social-media__facebook {
+  background-image: url(../images/social-media-icons/facebook.png);
+}
+.intro__social-media__instagram {
+  background-image: url(../images/social-media-icons/instagram.png);
 }
 
 .card-ordinary__header {
   text-align: center;
   margin: 0;
   padding: 30px 50px;
-  color: white;
+  color: #f8f9fa;
 }
 
 /*# sourceMappingURL=style.css.map */

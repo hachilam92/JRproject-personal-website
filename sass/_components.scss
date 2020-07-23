@@ -1,7 +1,7 @@
 @import "base";
 
 %active-navbar-text{
-    color: black;
+    color: $primary-text-color;
     border-bottom: 2px solid $primary-color;
 }
 
@@ -14,6 +14,7 @@
         height: 100%;
         padding: 0;
         position: relative;
+        transition: all 0.6s ease-in-out;
 
         .nav-item{
             margin-left: 20px;
@@ -50,6 +51,10 @@
     max-width: 1000px;
 }
 
+.highlight-text{
+    color: $primary-color;
+}
+
 //-----------Home page-------------
 
 .card-home{
@@ -59,6 +64,17 @@
         margin-bottom: 25px;
         height: 290px;
         @extend %main-background;
+
+        &__intro{
+            color: $secondary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .row{
+            height: 100%;
+        }
     }
 
     &__content{
@@ -83,11 +99,29 @@
 
 .avatar-image{
     max-width: 100%;
+    max-height: 100%;
     vertical-align: bottom;
-    height: auto;
     border: 0;
 }
 
+.intro__social-media{
+    display: flex;
+    justify-content: center;
+
+    &__twitter{
+        @extend %social-media-icon;
+        background-image: url(../images/social-media-icons/twitter.png);
+    }
+    &__facebook{
+        @extend %social-media-icon;
+        background-image: url(../images/social-media-icons/facebook.png);
+    }
+    &__instagram{
+        @extend %social-media-icon;
+        background-image: url(../images/social-media-icons/instagram.png);
+    }
+    
+}
 
 //-----------Resume page-------------
 
@@ -97,6 +131,6 @@
         text-align: center;
         margin: 0;
         padding: 30px 50px;
-        color: white;
+        color: $secondary-color;
     }
 }
