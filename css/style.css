@@ -35,7 +35,7 @@
   overflow: hidden;
 }
 
-.nav-item.active, #site-header .navbar .nav-item:hover {
+#site-header .navbar .nav-item.active, #site-header .navbar .nav-item:hover {
   color: black;
   border-bottom: 2px solid #2eca7f;
 }
@@ -60,7 +60,6 @@
 #site-header .navbar .nav-item .nav-link {
   padding: 0;
 }
-
 #sub-pages {
   background-color: #f8f9fa;
 }

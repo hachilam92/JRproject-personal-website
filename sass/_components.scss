@@ -29,14 +29,14 @@
                 padding: 0;
             }
         }
+
+        .nav-item.active{
+            @extend %active-navbar-text;
+        }
     }
 }
 
 
-
-.nav-item.active{
-    @extend %active-navbar-text;
-}
 
 
 //------------page layout-------------------
