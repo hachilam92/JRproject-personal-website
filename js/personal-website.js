@@ -11,7 +11,7 @@ window.onload = function(){
                 e.target.classList.add('active');
                 pageList.forEach((page)=> page.classList.remove('current-page'));
                 let pageName = e.target.textContent.toLowerCase().trim();
-                let page = document.querySelector(`.card-${pageName}`);
+                let page = document.querySelector(`.${pageName}`);
                 page.classList.add('current-page');
             });
         })

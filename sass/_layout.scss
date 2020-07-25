@@ -1,15 +1,18 @@
+
+
 #site-header{
     height: 20vh;
 }
 
-.row{
-    width: 100%;
-}
 
 #sub-pages{
+    background-color: $secondary-color;
+
     .card{
         min-height: 564px;
         border-radius: 20px;
+        padding-left: 0;
+        padding-right: 0;
         display: none;
     }
     .card.current-page{
@@ -17,4 +20,30 @@
     }
 }
 
+.card{
+    max-width: 1000px;
+}
 
+.highlight-text{
+    color: $primary-color;
+}
+
+//-----------ordinary card-------------
+
+.card-ordinary{
+    &__header{
+        @extend %main-background;
+        text-align: center;
+        margin: 0;
+        padding: 30px 50px;
+        h2{
+            color: $secondary-color;
+            font-size: 44px;
+            margin: 0;
+        }
+    }
+
+    &__content{
+        padding: 30px 50px 50px;
+    }
+}

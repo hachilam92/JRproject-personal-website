@@ -11,12 +11,13 @@
     <title>Ziwei Lan</title>
 </head>
 <body>
-    <header id="site-header" class="d-flex justify-content-center">
-            <div class="row no-gutters justify-content-center">
-                <nav class="navbar navbar-expand-lg navbar-light col-md-10">
+    <div class="page-container d-flex flex-column">
+        <header id="site-header" class="d-flex justify-content-center">
+            <div class="row justify-content-center">
+                <nav class="navbar navbar-expand-lg navbar-light col-sm-10 col-md-10 col-lg-10">
                     <a class="navbar-brand" href="#">John <span class="highlight-text">Doe</span></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
@@ -37,23 +38,21 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
             </div>
-        
     </header>
 
     <section id="sub-pages">
-        <div class="row no-gutters justify-content-center">
-            <div class="card card-home col-md-10 current-page">
-                <div class="card-home__top">
+        <div class="row justify-content-center">
+            <div class="card home col-sm-10 col-md-10 col-lg-10 col-md-offset-1 current-page">
+                <div class="home__top">
                     <div class="row">
-                        <div class="card-home__top__avatar col-sd-4 col-md-4">
+                        <div class="home__top__avatar col-sm-4 col-md-4 col-lg-4">
                             <img class="avatar-image" src="./images/photo.png" alt="Avatar">
                         </div>
-                        <div class="card-home__top__intro col-sd-8 col-md-8">
+                        <div class="home__top__intro col-sm-8 col-md-8 col-lg-8">
                             <div class="intro__name d-flex justify-content-center">
-                                <h2>John Doe</h2>  
+                                <h1>John Doe</h1>  
                             </div>
                             <div class="intro__title d-flex justify-content-center">Web Designer</div>
                             <div class="intro__social-media">
@@ -64,13 +63,13 @@
                         </div>
                     </div>     
                 </div>
-                <div class="card-home__content container">
+                <div class="home__content container">
                     <div class="row justify-content-around">
-                        <div class="card-home__content__intro col-md-6">
-                            <h2 class="intro_title">About <span class="highlight-text">Me</span></h2>
+                        <div class="home__content__intro col-sm-6 col-md-6 col-lg-6">
+                            <h3 class="intro_title block-title">About <span class="highlight-text">Me</span></h3>
                             <p class="intro_content">Hello! I’m John Doe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
                         </div>
-                        <div class="card-home__content__details col-md-5 col-md-offset-1">
+                        <div class="home__content__details col-sm-5 col-md-5 col-lg-s col-md-offset-1">
                             <ul class="info-list">
                                 <li class="info-list__item">
                                     <span class="info-list__item__title">Age</span>
@@ -86,7 +85,9 @@
                                 </li>
                                 <li class="info-list__item">
                                     <span class="info-list__item__title">e-mail</span>
-                                    <span class="info-list__item__value">info@jiangren.com.au</span>
+                                    <span class="info-list__item__value">
+                                        <span class="highlight-text">info@jiangren.com.au</span> 
+                                    </span>
                                 </li>
                                 <li class="info-list__item">
                                     <span class="info-list__item__title">Phone</span>
@@ -99,26 +100,174 @@
             </div>
 
 
-            <div class="card-resume card card-ordinary col-md-10">
+            <div class="resume card card-ordinary col-sm-10 col-md-10 col-lg-10">
                 <div class="card-ordinary__header">
                     <h2>Resume</h2>
                 </div>
-                <div class=""></div>
-            </div>
-
-            <div class="card-service card card-ordinary col-md-10">
-                <div class="card-ordinary__header">
-                    <h2>Service</h2>
+                <div class="card-ordinary__content">
+                    <div class="resume__top d-flex">
+                        <div class="row">
+                            <div class="resume__top-left col-sm-6 col-md-6 col-lg-6">
+                                <div class="top__title block-title">
+                                    <h3>Education</h3>
+                                </div>
+                                <div class="top__list">
+                                    <div class="top__list__item d-flex flex-column">
+                                        <div class="list__item__title">
+                                            <h4>Specialization Course</h4> 
+                                        </div>
+                                        <div class="list__item__info d-flex">
+                                            <div class="list__item__info__date">2010</div>
+                                            <div class="list__item__info__location">Apple Inc.</div>
+                                        </div>
+                                        <p class="list__item__description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
+                                        </p>
+                                    </div>
+                                    <div class="top__list__item d-flex flex-column">
+                                        <div class="list__item__title">
+                                            <h4>Specialization Course</h4> 
+                                        </div>
+                                        <div class="list__item__info d-flex">
+                                            <div class="list__item__info__date">2010</div>
+                                            <div class="list__item__info__location">Apple Inc.</div>
+                                        </div>
+                                        <p class="list__item__description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
+                                        </p>
+                                    </div>
+                                    <div class="top__list__item d-flex flex-column">
+                                        <div class="list__item__title">
+                                            <h4>Specialization Course</h4> 
+                                        </div>
+                                        <div class="list__item__info d-flex">
+                                            <div class="list__item__info__date">2010</div>
+                                            <div class="list__item__info__location">Apple Inc.</div>
+                                        </div>
+                                        <p class="list__item__description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="resume__top-right col-sm-6 col-md-6 col-lg-6">
+                            <div class="top__title block-title">
+                                <h3>Experience</h3>
+                            </div>
+                            <div class="top__list">
+                                <div class="top__list__item d-flex flex-column">
+                                    <div class="list__item__title">
+                                        <h4>Frontend-developer</h4> 
+                                    </div>
+                                    <div class="list__item__info d-flex">
+                                        <div class="list__item__info__date">Dec 2012 - current
+                                        </div>
+                                        <div class="list__item__info__location">Web Agency</div>
+                                    </div>
+                                    <p class="list__item__description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
+                                    </p>
+                                </div>
+                                <div class="top__list__item d-flex flex-column">
+                                    <div class="list__item__title">
+                                        <h4>Frontend-developer</h4> 
+                                    </div>
+                                    <div class="list__item__info d-flex">
+                                        <div class="list__item__info__date">Dec 2012 - current
+                                        </div>
+                                        <div class="list__item__info__location">Web Agency</div>
+                                    </div>
+                                    <p class="list__item__description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
+                                    </p>
+                                </div>
+                                <div class="top__list__item d-flex flex-column">
+                                    <div class="list__item__title">
+                                        <h4>Frontend-developer</h4> 
+                                    </div>
+                                    <div class="list__item__info d-flex">
+                                        <div class="list__item__info__date">Dec 2012 - current
+                                        </div>
+                                        <div class="list__item__info__location">Web Agency</div>
+                                    </div>
+                                    <p class="list__item__description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="resume__bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="skill col-sm-6 col-md-6 col-lg-6">
+                                    <h3 class="skill__title">
+                                        Design <span class="highlight-text">Skills</span>
+                                    </h3>
+                                    <div class="skill__list">
+                                        <h4>Web Design</h4>
+                                        <div class="skill__list__percentage">
+                                            <div class="percentage-bar skill-1"></div>
+                                        </div>
+                                        <h4>Graphic Design</h4>
+                                        <div class="skill__list__percentage">
+                                            <div class="percentage-bar skill-2"></div>
+                                        </div>
+                                        <h4>Print Design</h4>
+                                        <div class="skill__list__percentage">
+                                            <div class="percentage-bar skill-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill col-sm-6 col-md-6 col-lg-6">
+                                    <h3 class="skill__title">
+                                        Coding <span class="highlight-text">Skills</span>
+                                    </h3>
+                                    <div class="skill__list">
+                                        <h4>HTML5</h4>
+                                        <div class="skill__list__percentage">
+                                            <div class="percentage-bar skill-4"></div>
+                                        </div>
+                                        <h4>CSS3/LESS/SASS</h4>
+                                        <div class="skill__list__percentage">
+                                            <div class="percentage-bar skill-5"></div>
+                                        </div>
+                                        <h4>jQuery</h4>
+                                        <div class="skill__list__percentage">
+                                            <div class="percentage-bar skill-6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="card-blog card card-ordinary col-md-10">
+            <div class="service card card-ordinary col-sm-10 col-md-10 col-lg-10">
+                <div class="card-ordinary__header">
+                    <h2>Service</h2>
+                </div>
+                <div class="card-ordinary__content">
+                    <div class="row">
+                        <h3 class="block-title col-sm-12 col-md-12 col-lg-12">
+                            My <span class="highlight-text">Service</span>
+                        </h3>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="service-item">
+                                <div class="service-item__image">
+                                    <img src="./images/service/web_design_icon.png" alt="web_design_icon">
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog card card-ordinary col-sm-10 col-md-10 col-lg-10">
                 <div class="card-ordinary__header">
                     <h2>Blog</h2>
                 </div>
             </div>
 
-            <div class="card-contact card card-ordinary col-md-10">
+            <div class="contact card card-ordinary col-sm-10 col-md-10 col-lg-10">
                 <div class="card-ordinary__header">
                     <h2>Contact</h2>
                 </div>
@@ -127,6 +276,8 @@
 
         </div>
     </section>
+    </div>
+
 
     <script src="./js/personal-website.js"></script>
 </body>
