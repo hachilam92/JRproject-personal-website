@@ -230,5 +230,48 @@
 }
 
 
-//------------Resume page------------------
+//------------Service page------------------
 
+.service-item{
+    text-align: center;
+
+    &__image{
+        width: 120px;
+        height: 120px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        margin: 0 auto;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            transform: translateY(-7px);
+            box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+        }
+    
+        img{
+            max-width: 100px;
+            height: 64px;
+            margin: 28px 0;
+        }
+    }
+
+    h4{
+        font-size: 17px;
+        padding: 20px 0 0;
+    }
+}
+
+.client-item{
+    text-align: center;
+    padding: 5px 0;
+    opacity: 0.4;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    img{
+        max-width: 80px;
+    }
+}

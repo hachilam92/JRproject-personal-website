@@ -36,3 +36,20 @@ h1, h2, h3, h4, h5, h6{
     font-size: 21px;
     margin: 5px 0 25px;
 }
+
+.highlight-text{
+    color: $primary-color;
+}
+
+p {
+    font-size: 15px;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+img{
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
