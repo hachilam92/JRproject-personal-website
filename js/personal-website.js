@@ -2,7 +2,7 @@ window.onload = function(){
     const navItemList = Array.from(document.querySelectorAll('.nav-item'));
     const pageList = Array.from(document.querySelectorAll('.card'));
     
-    const eventAdd = function(){
+    function eventAdd () {
         navItemList.forEach((item) => {
             item.addEventListener('click', function(e){
                 navItemList.forEach((navItem)=>{
@@ -17,7 +17,15 @@ window.onload = function(){
         })
     }
 
+    function buttonAdd () {
+        const contactSubmit = document.querySelector('.contact-submit')
+        contactSubmit.addEventListener('click', function() {
+            alert('Hello World!');
+        });
+    }
+
     eventAdd();
+    buttonAdd();
 }
 
 

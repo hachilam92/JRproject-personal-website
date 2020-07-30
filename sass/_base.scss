@@ -1,5 +1,5 @@
 $primary-color: #2eca7f;
-$secondary-color:#f8f9fa;
+$secondary-color:#fafafa;
 $third-color: #9e9e9e;
 $primary-text-color: #212121;
 
@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6{
     line-height: 1.5em;
 }
 
+
 .block-title{
     font-size: 21px;
     margin: 5px 0 25px;
@@ -54,3 +55,6 @@ img{
     border: 0;
 }
 
+.card{
+    transform: perspective(1500px);
+}
