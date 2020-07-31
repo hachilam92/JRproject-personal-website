@@ -500,6 +500,10 @@ img {
   margin: 0 0 25px;
   padding-left: 40px;
 }
+.input-block .form-group:focus-within label {
+  top: -12px;
+  font-size: 0.8em;
+}
 .input-block .form-group .icon {
   position: absolute;
   top: 0;
@@ -555,6 +559,23 @@ img {
   font-weight: 400;
   color: #424242;
   transition: all 0.3s ease-in-out;
+}
+.input-block .form-group label.hoist {
+  top: -14px;
+  font-size: 0.8em;
+}
+.input-block .form-group .alert-info {
+  display: inline;
+  left: 25px;
+  position: absolute;
+  padding: 0 5px;
+  margin: -2px 0 0 10px;
+  font-size: 0.8em;
+  color: #ff4c4c;
+  background-color: #f5f5f5;
+}
+.input-block .form-group .alert-info.empty {
+  display: none;
 }
 .input-block .button {
   text-transform: uppercase;
