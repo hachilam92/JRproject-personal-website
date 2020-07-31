@@ -1,8 +1,4 @@
 
-%active-navbar-text{
-    color: $primary-text-color;
-    border-bottom: 2px solid $primary-color;
-}
 
 //-----------------navigation bar---------------
 
@@ -26,13 +22,33 @@
 
         .nav-item{
             margin-left: 20px;
-            color: $third-color;
-            border-bottom: 2px solid $secondary-color;
+            position: relative;
            
+            &::after{
+                display: block;
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: -3px;
+                content: '';
+                width: 0;
+                height: 2px;
+                margin: 0 auto;
+                background-color: #2eca7f;
+                transition: all 0.15s ease-in-out;
+                border-bottom: 3px solid #2eca7f;
+                z-index:99;
+            }
+
             &:hover{
-                @extend %active-navbar-text;
+                // @extend %active-navbar-text;
                 cursor: pointer;
-            }    
+
+                &::after{
+                    width: 25px;
+                }
+            }  
+            
         
             .nav-link{
                 padding: 0;
@@ -40,7 +56,9 @@
         }
 
         .nav-item.active{
-            @extend %active-navbar-text;
+            &::after{
+                width: 25px;
+            }
         }
     }
 }
