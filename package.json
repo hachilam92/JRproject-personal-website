@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/hachilam92/JRproject-personal-website#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {},
